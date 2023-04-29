@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practise javascript</title>
+</head>
+<body>
+    <h1>
+        this is just javascript practise question
+    </h1>
+    <script>
+        const characters = [
+    {
+        name:"jethalal",
+        height:"145",
+        mass:"87",
+        gender:"male",
+
+    },
+    {
+        name:"sodhi",
+        height:"175",
+        mass:"77",
+        gender:"male",
+
+    },
+   
+    {
+        name:"tarak",
+        height:"166",
+        mass:"6",
+        gender:"male",
+
+    },
+   
+    {
+        name:"bhide",
+        height:"163",
+        mass:"71",
+        gender:"male",
+
+    },
+   
+
+];
+
+// // get array of all name
+
+//     const names=characters.map(ch=>ch.name)
+//     console.log(names)
+
+// //get portation of name and height 
+//     const portataion = characters.map(ch => {
+//         return {name:ch.name,height:ch.height}
+//     }) 
+//     console.log(portataion)
+
+// find mass greater than 60
+    // const masse=characters.filter((characters)=>{
+    //     return characters.mass>60
+    // })
+    // console.log(masse)
+
+// get all male charcater
+     const gen = characters.filter((characters=>{
+        return characters.gender == "male"
+     })) 
+     console.log(gen)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox-1</title>
+    <style>
+         body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            padding: 1 20px 30px 0;    
+            line-height: 1.4;
+        }
+
+        .flex-container{
+            background-color: aqua;
+            display:flex;
+            flex-direction:row;
+            border-color: black;
+            flex-wrap:wrap;
+            margin: 0em;
+
+        }
+        .flex-item{
+            width:150px;
+            height:150px;
+            text-align:left;
+            font-size: 1em;
+            font-weight:lighter;
+            border: 2px solid black;
+        }
+        .flex-item-sub{
+            width:100px;
+            height:100px;
+            font-size:0.5em;
+            border:1px solid black;
+            flex-wrap: wrap;
+            display:flex;
+        }
+        .l1{
+            display: flex;
+            padding: 0em;
+        }
+
+        #flex-item-1{
+            width: 400px;
+            height: 200px;
+            background-color:orange;
+            flex-grow: 3;
+        }
+        #flex-item-2{
+            width: 400px;
+            height: 200px;
+            background-color: rgb(255, 255, 255);
+            flex-grow: 3;
+        }
+        #flex-item-3{
+            width: 400px;
+            height: 200px;
+            background-color:green;
+            flex-grow: 3;
+        }
+        #flex-item-4{
+            width: 300px;
+            height: 75px;
+            background-color:rgb(128, 0, 107);
+            flex-grow: 2;
+        }
+        #flex-item-5{
+            width: 300px;
+            height: 75px;
+            background-color:rgb(0, 128, 11);
+            flex-grow: 2;
+        }
+
+        #flex-item-6{
+            width: 300px;
+            height: 75px;
+            background-color:rgb(115, 128, 0);
+            flex-grow: 2;
+        }
+
+        #flex-item-7{
+            width: 300px;
+            height: 75px;
+            background-color:rgb(19, 0, 128);
+            flex-grow: 2;
+        }
+
+        #flex-item-8{
+            width: 200px;
+            height: 75px;
+            background-color:orange;
+            flex-grow: 1;
+        }
+        #flex-item-9{
+            width: 200px;
+            height: 75px;
+            background-color:orangered;
+            flex-grow: 1;
+        }
+        #flex-item-10{
+            width: 200px;
+            height: 75px;
+            background-color:whitesmoke;
+            flex-grow: 1;
+        }
+        #flex-item-11{
+            width: 200px;
+            height: 75px;
+            background-color:green;
+            flex-grow: 1;
+        }
+        #flex-item-12{
+            width: 200px;
+            height: 75px;
+            background-color:rgb(128, 126, 0);
+            flex-grow: 1;
+        }
+        #flex-item-sub-1{
+            width: 130px;
+            height: 60px;
+            background-color:yellowgreen;
+            flex-grow: 3;
+        }
+        #flex-item-sub-2{
+            width: 130px;
+            height: 60px;
+            background-color:rgb(91, 50, 205);
+            flex-grow: 3;
+        }
+        #flex-item-sub-3{
+            width: 130px;
+            height: 60px;
+            background-color:rgb(50, 205, 115);
+            flex-grow: 3;
+        }
+        #flex-item-sub-4{
+            width: 100px;
+            height: 45px;
+            background-color:rgb(50, 66, 205);
+            flex-grow: 2;
+        }
+        #flex-item-sub-5{
+            width: 100px;
+            height: 45px;
+            background-color:rgb(183, 230, 15);
+            flex-grow: 2;
+        }
+        #flex-item-sub-6{
+            width: 100px;
+            height: 45px;
+            background-color:rgb(205, 50, 153);
+            flex-grow: 2;
+        }
+        #flex-item-sub-7{
+            width: 100px;
+            height: 45px;
+            background-color:rgb(218, 126, 7);
+            flex-grow: 2;
+        }
+        #flex-item-sub-8{
+            width: 95px;
+            height: 35px;
+            background-color:rgb(184, 146, 24);
+            flex-grow: 1;
+        }
+        #flex-item-sub-9{
+            width: 95px;
+            height: 35px;
+            background-color:rgb(247, 22, 60);
+            flex-grow: 1;
+        }
+        #flex-item-sub-10{
+            width: 95px;
+            height: 35px;
+            background-color:rgb(187, 50, 205);
+            flex-grow: 1;
+        }
+        #flex-item-sub-11{
+            width: 95px;
+            height: 35px;
+            background-color:rgb(219, 41, 28);
+            flex-grow: 1;
+        }
+        #flex-item-sub-12{
+            width: 95px;
+            height: 35px;
+            background-color:rgb(15, 36, 230);
+            flex-grow: 1;
+        }
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item" id="flex-item-1">1
+            <div class="l1">
+               <div class="flex-item-sub" id="flex-item-sub-1">1</div>
+               <div class="flex-item-sub" id="flex-item-sub-2">2</div>
+               <div class="flex-item-sub" id="flex-item-sub-3">3</div>
+            </div>
+            <div class="l1">
+                <div class="flex-item-sub" id="flex-item-sub-4">4</div>
+                <div class="flex-item-sub" id="flex-item-sub-5">5</div>
+                <div class="flex-item-sub" id="flex-item-sub-6">6</div>
+                <div class="flex-item-sub" id="flex-item-sub-7">7</div>
+            </div>
+            <div class="l1">
+                <div class="flex-item-sub" id="flex-item-sub-8">8</div>
+                <div class="flex-item-sub" id="flex-item-sub-9">9</div>
+                <div class="flex-item-sub" id="flex-item-sub-10">10</div>
+                <div class="flex-item-sub" id="flex-item-sub-11">11</div>
+                <div class="flex-item-sub" id="flex-item-sub-12">12</div>
+            </div>
+            
+        </div>
+        <div class="flex-item" id="flex-item-2">2</div>
+        <div class="flex-item" id="flex-item-3">3</div>
+        <div class="flex-item" id="flex-item-4">4</div>
+        <div class="flex-item" id="flex-item-5">5</div>
+        <div class="flex-item" id="flex-item-6">6</div>
+        <div class="flex-item" id="flex-item-7">7</div>
+        <div class="flex-item" id="flex-item-8">8</div>
+        <div class="flex-item" id="flex-item-9">9</div>
+        <div class="flex-item" id="flex-item-10">10</div>
+        <div class="flex-item" id="flex-item-11">11</div>
+        <div class="flex-item" id="flex-item-12">12</div>
+    </div>
+
+    
+</body>
+</html>
+
+
+<!--challenge-1 of flex box completed-->

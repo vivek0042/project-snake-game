@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox:2:profiles</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+               
+            line-height: 1.4;
+        }
+        .flex-container{
+            background-color: #5f159c;
+            display:flex;
+            flex-direction:row;
+            border-color: black;
+            flex-wrap:wrap;
+            margin: 0em;
+
+        }
+        .flex-item{
+            width:300px;
+            height:550px;
+            text-align:center;
+            font-size: 1em;
+            font-weight:lighter;
+            border: 2px solid red;
+            margin: 65px;
+            background-color:yellow;
+        }
+        .murmu{
+            height: 50px;
+            width:50px;
+            
+        }
+        .dhankhar{
+            height: 50px;
+            width:50px;
+
+        }
+        .modi{
+            height: 50px;
+            width:50px;
+        }
+        h1{
+            background-color: yellow;
+            text-align:center;
+        }
+        
+    </style>
+
+
+</head>
+<body>
+    <h1><u>Three Pillars Of India</u></h1>
+    <div class="flex-container">
+        <div class="flex-item" id="murmu">
+            <img src="dropadi murmu.jpg" alt="" style="height: 250px;" style="width: 250px;">
+            <p> <b>Shrimati Dropadi Murmu</b> is first tribal president of India.She is 15th president of india also she is second women president of india.Her personality is kind and soft nature who have never seen in any controversay or case.</p>
+        </div>
+        <div class="flex-item" id="dhankhar">
+            <img src="jagdeep dhankhar.jpg" alt="" style="height: 250px;" style="width: 250px;">
+            <p> <b>Shri Jagdeep Dhankhar </b>is 15th vice-president of India.He is basically from rajsthan.He is former governer of west bengal.His personality is somewhat agrresive and polity at a same time.</p>
+        </div>
+        <div class="flex-item">
+            <img src="narendra modi.jpg" id="modi" style="height: 250px;" style="width: 250px;">
+            <p><b>Shri Narendra Modi </b> is 18th prime minister of India.He is basically from gujrat.he is former cm of gujrat.his personality is polity and fruitful.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

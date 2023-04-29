@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb On-Off</title>
+    <style>
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+            background-color: black;
+        }
+
+        .btn{
+            padding: 20px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <img  id="bulb" src="bulb off.jpeg" alt="" class="center">
+    <button id="toogleBtn" class="center btn">Turn On</button>
+
+
+    <script>
+        let btn = document.getElementById('toogleBtn')
+        let bulb = document.getElementById('bulb')
+        btn.addEventListener('click',tooglebulb)
+
+        function tooglebulb(e){
+            if(btn.textContent.includes('on')){
+                bulb.src = "bulb on.jpg"
+                btn.textContent="Turn off"
+            }
+            else{
+                bulb.src = "bulb off.jpeg"
+                btn.textContent="Turn on"
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
